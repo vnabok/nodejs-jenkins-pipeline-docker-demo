@@ -15,5 +15,5 @@ node {
      docker.withRegistry('https://index.docker.io/v2/', 'docker_hub_token') {
        def app = docker.build("vnabok/nodejs_demo:${commit_id}", '.').push()
      }
-   }
+   } // End of CI part
 }
